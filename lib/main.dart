@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ieee_forms/Signin.dart';
 import 'package:ieee_forms/Signup.dart';
+import 'package:ieee_forms/forgot-password.dart';
 void main() {
   runApp( const Loginpage());
 }

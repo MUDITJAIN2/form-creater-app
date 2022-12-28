@@ -72,7 +72,8 @@ class _MySignupState extends State<MySignup> {
                             fontWeight: FontWeight.w800, fontSize: 20)),
                   )
                 ],
-              )),
+              )
+              ),
 
           SizedBox(
             height: 30.0,

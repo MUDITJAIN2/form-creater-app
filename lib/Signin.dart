@@ -1,7 +1,8 @@
-import 'dart:ui';
+
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 import 'package:flutter/material.dart';
 import 'package:ieee_forms/Signup.dart';
+import 'package:ieee_forms/forgot-password.dart';
 
 class MySignin extends StatefulWidget {
   const MySignin({super.key});
@@ -52,10 +53,11 @@ class _MySigninState extends State<MySignin> {
               child: Row(
                 children: [
                   TextButton(
-                    onPressed: () {             
+                    onPressed: () {
                       Navigator.push(
                           context,
-                          MaterialPageRoute( builder: (context) => const MySignup()));
+                          MaterialPageRoute(
+                              builder: (context) => const MySignup()));
                     },
                     child: Text('Register here !',
                         style: TextStyle(
@@ -107,7 +109,13 @@ class _MySigninState extends State<MySignin> {
                 width: 40.0,
               ),
               TextButton(
-                  onPressed: (() {}),
+                  onPressed: (() {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const password()));
+                  }
+                  ),
                   child: Text(
                     'forgot pasword?',
                     style: TextStyle(color: Colors.black54),
