@@ -9,7 +9,7 @@ class password extends StatefulWidget {
 
 class _passwordState extends State<password> {
   final emailController = TextEditingController();
-  final auth = FirebaseAuth.instance;
+  final auth   = FirebaseAuth.instance;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
